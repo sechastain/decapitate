@@ -1,4 +1,3 @@
 (function() {
-$('body').background('#000000');
-alert('Hello, World!!');
+$(':text').text('something else');
 })();
