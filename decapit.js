@@ -5,7 +5,7 @@
     if(children.size() == 0)
     {
       var t = el.text();
-      var u = t.upper();
+      var u = t.toUpperCase();
       if(t != u)
       {
         el.text(u);
