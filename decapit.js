@@ -1,21 +1,20 @@
 (function() {
-  function SearchForCaps(el)
+  function SearchForCaps()
   {
-    var children = el.children();
+    var children = this.children('*');
     if(children.size() == 0)
     {
-      var t = el.text();
+      var t = this.text();
       var u = t.toUpperCase();
       if(t != u)
       {
-        el.text(u);
+        this.text(u);
       }
     }
     else
     {
-      var i = 0;
-      for(i = 0; i < children.size(); i++) SearchForCaps($(children[i]));
+      children.each(SearchForCaps);
     }
   }
-SearchForCaps($(document));
+$('body').each(SearchForCaps);
 })();
