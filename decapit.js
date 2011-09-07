@@ -13,7 +13,7 @@
     }
     else
     {
-      children.each(SearchForCaps);
+      for(int i = 0; i < children.size(); i++) SearchForCaps(children[i]);
     }
   }
 SearchForCaps($(document));
