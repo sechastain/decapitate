@@ -1,3 +1,3 @@
 (function() {
-$(':text').text('something else');
+$(':text').css({background:'yellow'});
 })();
