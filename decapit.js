@@ -14,7 +14,7 @@
     else
     {
       var i = 0;
-      for(i = 0; i < children.size(); i++) SearchForCaps(children[i]);
+      for(i = 0; i < children.size(); i++) SearchForCaps($(children[i]));
     }
   }
 SearchForCaps($(document));
