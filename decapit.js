@@ -2,14 +2,14 @@
   function SearchForCaps()
   {
     var el = $(this)
-    var children = this.children();
+    var children = el.children();
     if(children.size() == 0)
     {
-      var t = this.text();
+      var t = el.text();
       var u = t.toUpperCase();
       if(t != u)
       {
-        this.text(u);
+        el.text(u);
       }
     }
     else
