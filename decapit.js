@@ -1,7 +1,8 @@
 (function() {
   function SearchForCaps()
   {
-    var children = this.children('*');
+    var el = $(this)
+    var children = this.children();
     if(children.size() == 0)
     {
       var t = this.text();
