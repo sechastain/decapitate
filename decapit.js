@@ -18,5 +18,5 @@
       contents.each(SearchForCaps);
     }
   }
-$(document).each(SearchForCaps);
+$('body').each(SearchForCaps);
 })();
