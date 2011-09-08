@@ -9,7 +9,7 @@
       var u = t.toUpperCase();
       if(t != u)
       {
-        el.text(u);
+        el.val(u);
       }
     }
     else
