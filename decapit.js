@@ -1,8 +1,9 @@
 (function() {
   function SearchForCaps()
   {
-    var el = $(this)
-    var contents = el.contents().not('script');
+    if(this.tagName.toUpperCase() === 'SCRIPT') return;
+    var el = $(this);
+    var contents = el.contents();
     if(contents.size() == 0)
     {
       var t = el.text();
