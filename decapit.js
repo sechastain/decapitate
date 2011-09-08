@@ -2,7 +2,7 @@
   function SearchForCaps()
   {
     var el = $(this)
-    var contents = el.contents();
+    var contents = el.contents().not('script');
     if(contents.size() == 0)
     {
       var t = el.text();
