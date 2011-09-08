@@ -19,14 +19,14 @@
     }
   }
 var start = $('iframe#canvas_frame'); //search for gmail
-if(start.size() > 0)
-{
-  start = start.contents();
-}
-else
-{
+//if(start.size() > 0)
+//{
+//  start = start.contents();
+//}
+//else
+//{
   start = $('body');
-}
+//}
 start.each(SearchForCaps);
 })();
 
