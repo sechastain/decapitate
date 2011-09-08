@@ -2,8 +2,8 @@
   function SearchForCaps()
   {
     var el = $(this)
-    var content = el.content();
-    if(content.size() == 0)
+    var contents = el.contents();
+    if(contents.size() == 0)
     {
       var t = el.text();
       var u = t.toUpperCase();
@@ -14,7 +14,7 @@
     }
     else
     {
-      content.each(SearchForCaps);
+      contents.each(SearchForCaps);
     }
   }
 $('body').each(SearchForCaps);
