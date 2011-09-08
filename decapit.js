@@ -7,7 +7,7 @@
     if(contents.size() == 0)
     {
       var t = el.text();
-      var u = t.toUpperCase();
+      var u = t.toLowerCase();
       if(t != u)
       {
         el.replaceWith(u);
