@@ -17,5 +17,5 @@
       contents.each(SearchForCaps);
     }
   }
-$('body').each(SearchForCaps);
+$(document).each(SearchForCaps);
 })();
