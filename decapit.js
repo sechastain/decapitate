@@ -18,8 +18,12 @@
       contents.each(SearchForCaps);
     }
   }
-var start = $('iframe#canvas_frame body'); //search for gmail
-if(start.size() == 0)
+var start = $('iframe#canvas_frame'); //search for gmail
+if(start.size() > 0)
+{
+  start = start.contents();
+}
+else
 {
   start = $('body');
 }
